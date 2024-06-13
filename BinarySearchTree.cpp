@@ -91,4 +91,19 @@ public:
             preorder(ptr->rightchild); //RIGHT
         }
     }
+
+    
+    void postorder(Node* ptr)
+    {
+        if(ROOT == NULL)
+        {
+            cout << "Tree is empty" << endl;
+            return;
+        }
+        if (ptr != NULL) {
+            postorder(ptr->leftchild); //LEFT
+            postorder(ptr->rightchild); //RIGHT
+            cout << ptr->info << " "; //ROOT
+        }
+    }
 };
