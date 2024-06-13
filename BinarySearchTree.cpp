@@ -33,7 +33,7 @@ public:
 
         Node* parent = nullptr;
         Node* currentNode = nullptr;
-        search(element, parent, currentNode); //Locate the node which will be the parent of
+        search(element, parent, currentNode); //Locate the node which will be the parent of the node to be inserted. Mark it as parent.
 
         if(parent == nullptr) { //if the parent is null, tree is empty
             ROOT = newNode; //mark the new node as ROOT //step 5a
@@ -63,4 +63,6 @@ public:
                 currentNode = currentNode->rightchild;
         }
     }
+
+
 };
